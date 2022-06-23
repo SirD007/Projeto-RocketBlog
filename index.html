@@ -14,10 +14,10 @@
         <nav>
             <a class="logo" href="#"><img src="assets/logo.svg" alt="logo"></a>
             <ul class="nav_itens">
-                <li><a class="home_nav" href="#">Home</a></li>
+                <li><a class="home_nav" href="index.html">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#category">Categorias</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="search_container">
                 <input placeholder="Buscar" type="search" name="search_bar" id="search_bar_nav">
@@ -82,7 +82,7 @@
 
     </section>
 
-    <section class="category">
+    <section id="category" class="category">
 
         <h3>Categorias de postagem</h3>
         <div class="category_cards">
@@ -95,7 +95,8 @@
         <div class="see_more"><a href="#"> Ver Mais </a><img src="assets/arrow-right.svg" alt=""></div>
 
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
+        <h3>Contato</h3>
         <form action="post">
             <label for="name"></label>
             <input placeholder="Nome" type="text" name="name" id="">
@@ -105,7 +106,12 @@
 
             <label for="subject"></label>
             <textarea placeholder="Assunto" name="subject" id="" cols="30" rows="10"></textarea>
+
+            <button type="submit">Enviar</button>
         </form>
     </section>
+    <footer>
+        <p>Esse projeto foi desenvolvido durante o programa Discover da <a target="_blank" href="https://rocketseat.com.br">Rocketseat</a> por <a target="_blank" href="https://github.com/SirD007/">SirD007</a></p>
+    </footer>
 </body>
 </html>

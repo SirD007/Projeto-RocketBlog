@@ -13,8 +13,12 @@
   body {
     margin: 0 auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
   }
-
+  
+  html {scroll-behavior:smooth}
 
   /* CONFIGURAÇÔES PADRÂO */
 
@@ -288,6 +292,7 @@ nav .search_container img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 form {
@@ -295,16 +300,74 @@ form {
   flex-direction: column;
   width: 40vw;
   gap: 10px;
+  padding: 24px;
+  background-color: var(--light-purple);
 }
 
 input  {
   padding: 15px;
-  outline: #3f175c;
+  border: 1px solid #3f175c;
   font-family: var(--Roboto);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #4fff4b;
 }
 
 textarea {
   padding: 15px;
-  outline: #3f175c;
+  border: 1px solid #3f175c;
   font-family: var(--Roboto);
+  border-radius: 5px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #4fff4b;
+}
+
+form button {
+  background-color: var(--button-bg);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #b27fd6;
+}
+
+.contact h3 {
+  font-family: var(--Roboto);
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin: 0;
+  color: var(--purple-bg);
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--purple-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: white;
+  font-family: var(--Roboto);
+}
+
+footer a {
+  color: var(--button-bg);
 }
