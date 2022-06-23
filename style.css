@@ -116,6 +116,7 @@
      border-radius: 4px 0 0 4px;
      padding: 14px 25px;
      border: none;
+     color: white;
 }
 
 nav .search_container input::placeholder {
