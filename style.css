@@ -27,6 +27,7 @@
     font-size: 2.4rem;
     line-height: 3.6rem;
     margin: 16px 0;
+    color: var(--purple-bg);
   }
 
   .post_text {
@@ -231,14 +232,14 @@ nav .search_container img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 50px;
 }
 
 .category h3 {
   font-family: var(--Roboto);
   font-size: 2.4rem;
   line-height: 3.6rem;
-  margin: 16px 0;
+  margin: 0;
   color: white;
   margin-bottom: 50px;
 }
@@ -246,6 +247,12 @@ nav .search_container img {
 .category_cards {
   display: flex;
   gap: 30px;
+}
+
+.catcard {
+  margin: 0;
+  height: 59px;
+  display: flex;
 }
 
 .catcard a {
@@ -260,4 +267,44 @@ nav .search_container img {
 
 .catcard a:hover{
   background-color: #b27fd6;
+}
+
+.see_more {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see_more a {
+  font-size: 1.6rem;
+  font-family: var(--Roboto);
+  color: white;
+}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  gap: 10px;
+}
+
+input  {
+  padding: 15px;
+  outline: #3f175c;
+  font-family: var(--Roboto);
+}
+
+textarea {
+  padding: 15px;
+  outline: #3f175c;
+  font-family: var(--Roboto);
 }
